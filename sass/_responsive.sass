@@ -1,0 +1,269 @@
+.fade
+    -webkit-animation-name: fade
+    -webkit-animation-duration: 3s
+    animation-name: fade
+    animation-duration: 3s
+
+@-webkit-keyframes fade
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+@keyframes fade
+    from
+        opacity: 0
+    to
+        opacity: 1
+    
+@media screen and ( max-width: 768px )
+    .logo-container
+        display: none
+
+    .hamburger
+        position: absolute
+        top: 25px
+        right: 20px
+        z-index: 2
+        height: 30px
+        cursor: pointer
+        display: none
+
+    .line1,
+    .line2,
+    .line3
+        width: 20px
+        height: 2px
+        border-radius: 5px
+        background-color: $brand-dark
+        transition: all 1s ease
+
+    .line2
+        transform: translateY(6px)
+        width: 10px
+        transition: all .3s ease
+
+    .line3
+        transform: translateY(12px)
+
+    .close
+        top: 30px
+    
+    .close .line1
+        transform: rotate(45deg)
+    .close .line3
+        margin-top: -4px
+        transform: rotate(-45deg)
+    .close .line2
+        width: 0
+    
+    ul.navbar-list
+        display: none
+
+    ul.navbar-list.responsive
+        animation: navbar-left 1s ease-in-out
+        -webkit-animation: navbar-left 1s ease-in-out
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 0
+        right: 0
+        padding: 50px 30px
+        background-color: #ffffff
+    
+    ul.navbar-list.responsive li.navbar-list-item
+        background-color: #ffffff
+        margin-left: 0
+        padding: 20px
+
+    ul.navbar-list.responsive li.navbar-list-item a
+        font-size: 13px
+
+    ul.navbar-list.responsiveReturn
+        transform: translateY(-100%)
+        animation: navbar-right 1s ease-in-out
+        -webkit-animation: navbar-right 1s ease-in-out
+
+    @keyframes navbar-left
+        0%
+            transform: translateY(-100%)
+        100%
+            transform: translateY(0)
+
+    @-webkit-keyframes navbar-left
+        0%
+            transform: translateY(-100%)
+        100%
+            transform: translateY(0)
+
+    @keyframes navbar-right
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    @-webkit-keyframes navbar-right
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    header
+        padding-top: 100px
+        height: auto
+        padding-bottom: 100px
+
+    .header-text-wrapper
+        text-align: center
+        width: 100%
+        padding-top: 0
+
+    .header-img-wrapper
+        display: none
+
+    h1.header-text
+        font-size: 2rem
+
+    .history-text,
+    .history-imgs
+        width: 100%
+
+    section.history-section
+        padding-top: 60px
+
+    p.header-expln
+        width: 100%
+        font-weight: 400
+        font-size: 13px
+
+    button.get-projects,
+    button.get-quote
+        margin-right: 0
+        font-size: 12px
+        display: block
+        margin: auto
+
+    button.get-projects
+        margin-bottom: 20px
+
+    p.history-expln
+        font-size: 13px
+        text-align: center
+        margin-bottom: 30px
+    
+    h1.section-header-text
+        font-size: 18px
+
+    .personnel-idea
+        width: 100%
+        margin-bottom: 20px
+        padding: 20px 0
+
+    .personnel-idea h1
+        font-size: 24px
+
+    .personnel-idea h1 span
+        font-size: 20px
+
+    .dot
+        width: 15px
+        height: 15px
+
+    .personnel-avatars,
+    .personnel-avatars img
+        width: 100%
+
+    img.about-icon
+        width: 70px
+
+    .personnel-avatars img.personnel
+        margin-bottom: 20px
+
+    h1.section-header
+        font-size: 18px
+        text-align: center
+
+
+    section.services-section
+        padding-top: 0
+
+    .service4893,
+    .footer-brand
+        width: 100%
+
+    p.service-expln
+        font-size: 13px
+
+    .services-rendered
+        width: 100%
+        margin-bottom: 20px
+
+    .project-text
+        width: 100%
+
+    p.project-expln
+        font-size: 13px
+        line-height: 1.5
+
+    .project-illustration,
+    .project-img
+        width: 100%
+
+    .project-illustration
+        margin-top: 20px
+
+    p.illustration-title,
+    p.number,
+    a.more
+        font-size: 14px
+
+    .testimony-wrapper
+        width: 100%
+        margin-bottom: 20px
+
+    p.talk
+        font-size: 13px
+
+    p.avatar-name
+        font-size: 15px
+
+    img.star
+        width: 15px
+
+    .button-wrapper
+        margin-top: 20px
+
+    .categories
+        width: 100%
+
+    .sec
+        justify-content: flex-start
+
+    .gender
+        margin-right: 50px
+
+    p.enchanteur-footer
+        font-size: 13px
+
+    .gender p,
+    .foot3289 p,
+    p.info
+        font-size: 13px
+
+    .sub
+        width: 100%
+    
+    .sub input
+        width: 100%
+        font-size: 13px
+        margin-bottom: 20px
+
+    button.footer-submit
+        margin: 0 auto
+
+    h1.footer-header
+        font-size: 24px
+
+    h1.footer-header:after
+        width: 10px
+        height: 10px
